@@ -1,0 +1,158 @@
+
+@import url(style1.css);
+/****************************清除*****************************/
+*{
+    padding:0px;
+    margin: 0px;
+}
+/****************************布局*****************************/
+body{
+    display:flex;
+    flex-flow:column; 
+}
+#flex-box{
+    display:flex;
+}
+aside{
+    display: flex;
+    flex-flow:column; 
+}
+/***************************效果******************************/
+body{
+    width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+header{
+    height:80px;
+    width:980px;
+}
+header>span{
+    height:60px;
+    font-size:2em;
+    letter-spacing: 3em;
+}
+header>mark{
+    display:block;
+    background-color:#E6E6FA;
+    width:980px;
+    height:20px;
+}
+
+main{
+    width:680px;
+    
+}
+main>section{
+    height: 300px;
+    width: 680px;
+  
+}
+main>section>h3{                                        /* 给所有main下级section中的标题设置统一样式*/
+border-bottom:0.4em solid #CCEEFF;
+border-top: 0.4em solid #CCEEFF;
+border-radius:1.5em;
+}
+.pack{
+    height:220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.shopp{                          /*设置商品样式*/
+    width:130px;
+    height:220px;
+    }
+    .shopp img{                             /*设置商品中插图*/
+        border-bottom:0.1em solid;                              
+    width: 130px;
+    height:120px;
+    }
+    .shopp h4{
+    height:35px;
+    }
+    
+aside{
+    width:300px;
+}
+aside>#shop{
+    width:100%;
+    background-color:#BBFFFF;
+}
+.shop1{
+display: flex;
+width:280px;
+height: 50px;
+margin: 5px;
+background-color: white;
+justify-content: space-evenly;
+}
+.shop1 h3{
+    line-height:2.5;
+    width: 50px;
+    height:50px;
+    background-color: #87CEFA;
+    clip-path: circle(15px);
+}
+.shop1 img{
+    margin-left: 5px;
+    margin-right:5px;
+    width:40px;
+    height: 40px;
+}
+.shop1>h6{
+    width:100px;
+    height: 40px;
+    font-size: 0.1em;
+}
+.shop1 div h6{
+    width:60px;
+    font-size: 0.1em;
+}
+aside>div>#rank{
+    display:inline-block;
+    width:49%;
+  border-bottom-style:dotted;
+  background-color:#BBFFFF;
+}
+aside>#box>h5{
+    border-top-style: solid;
+    border-bottom-style: dotted;
+    background-color: #FFFFFF;
+}
+.shop2{
+    display: flex;
+    width:280px;
+    height: 50px;
+    margin: 5px;
+    justify-content: space-between;
+    border-color: #87CEFA;
+    }
+    .shop2 img{
+        margin-left:5px;
+        margin-right: 5px;
+        width:40px;
+        height: 40px;
+    }
+    .shop2>h6{
+        width:100px;
+        height: 40px;
+        font-size: 0.1em;
+    }
+    .shop2 div h6{
+        width:50px;
+    }
+aside>#box>button{
+    display:none;
+    margin-top: 30px;
+   width:300px;
+}
+    /***************************动态效果******************************/
+    .shopp h6{                                                            /*商品块数量=库存时跳出红色字提示：库存不足*/
+        color: red;
+    }
+    aside>#box>#but1{                                                            /*购物车出现商品时跳出下单按钮*/
+        display:block;
+    }
