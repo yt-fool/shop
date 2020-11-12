@@ -1,7 +1,7 @@
 # shop
 简历项目：自设计便利店网站—用于找工作（迭代思路：for（完善？）{面试-发现不足-学习-项目完善}-最终上线））          2020年11月12日 11:14  
 原始项目效果图：
-![image](https://github.com/yt-fool/shop/blob/master/img1.jpg)  
+![image](https://github.com/yt-fool/shop/blob/master/img1.png)  
                                                           
                                                         【具备问题】      
 1.存在bug（数量按钮联动购物车点击减少时会出现购物车-商品组件错乱问题）    
