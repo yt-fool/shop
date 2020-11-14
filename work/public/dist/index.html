@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh"> 
+    <head>
+        <meta charset="utf-8">
+    <title>
+        杨涛便利店
+    </title>
+</head>
+    <body>
+<header >
+    <span>杨涛便利店</span>             <!--店名 -->
+    <mark >欢迎光临杨涛便利店,本店营业时间为6:00——22:00</mark>     
+    <w></w>                
+</header>                                              <!-- 头部-->
+<div id="flex-box">
+<main>                                              <!--左侧主体-->
+    <pack :item="item" v-for="item in data" :key=data.id></pack>
+</main>                
+<aside>                                 <!--右侧固定栏-->
+    <div id="shop"><span id="rank">本周特卖</span>
+    <div>
+        <hotbuy :item="item" v-for="item in hdata" :key="hdata.name"></hotbuy>
+    </div>
+    </div>
+    <div id="box"><h5>购物车</h5>
+        <div>
+           <shopcar :item="item" v-for="item in sdata" :key="sdata.name" ></shopcar>
+        </div>
+            <button :id="but">下单</button>
+       </div>
+</aside>
+</div>
+<script src="./bundle.js"></script>
+    </body>
+</html>

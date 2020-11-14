@@ -1,0 +1,89 @@
+
+body{
+    margin-left:auto;
+    margin-right:auto;
+    width:90vw;
+    text-align: center;
+    font-size:1vw;
+}
+header{
+    position: fixed;
+    top:0;
+    right:4.5vw;
+    left:4vw;
+    height:10vh;
+   width:90vw;
+   margin-top:0.1vh;
+   margin-bottom:0.1vh;
+   background-color: #FFFFFF;
+  z-index: 1;
+}
+header>span{
+font-size:2.5vw;
+letter-spacing: 10vw;
+}
+header>mark{
+    background-color:#E6E6FA;
+    width:90vw;
+    height:2.7vh;
+position: fixed;
+top:7.3vh;
+left:5vw;
+right:5vw;
+}
+main{
+    position: relative;
+    top:8vh;
+    width:60vw;     
+}
+main>section{
+    height: 40vh;
+    width: 60vw;
+  
+}
+main>section>h3{                                        /* 给所有main下级section中的标题设置统一样式*/
+border-bottom:1vh solid #CCEEFF;
+border-top: 1vh solid #CCEEFF;
+border-radius:3vw;
+}
+aside{
+    position: fixed;
+    top:11vh;
+    right:5vw;
+    bottom:0;
+    left:65vw;
+    height:70vh;
+    width:30vw;
+}
+
+aside>#shop{
+    width:100%;
+    background-color:#BBFFFF;
+    height:35vh;
+    overflow :auto;
+}
+#shop>div:nth-child(2){
+    height:30vh;
+    overflow :auto;
+}
+aside>div>#rank{
+    display:inline-block;
+    width:49%;
+  border-bottom-style:dotted;
+  background-color:#BBFFFF;
+}
+#box>div:nth-child(2){
+    height:40vh;
+    overflow :auto;
+}
+aside>#box>h5{
+    border-top-style: solid;
+    border-bottom-style: dotted;
+    background-color: #FFFFFF;
+}
+aside>#box>button{
+   width:30vw;
+   position: fixed;
+   bottom: 1vh;
+   left:65vw;
+}
