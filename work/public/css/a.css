@@ -2,9 +2,8 @@
 body{
     margin-left:auto;
     margin-right:auto;
-    width:90vw;
+    width:90%;
     text-align: center;
-    font-size:1vw;
 }
 header{
     position: fixed;

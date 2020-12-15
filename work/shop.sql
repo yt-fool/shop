@@ -11,7 +11,7 @@
  Target Server Version : 80021
  File Encoding         : 65001
 
- Date: 30/10/2020 14:22:22
+ Date: 15/12/2020 13:50:35
 */
 
 SET NAMES utf8mb4;
@@ -29,7 +29,7 @@ CREATE TABLE `hot`  (
   `num` int UNSIGNED NOT NULL COMMENT '库存',
   `unit` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '入库单位',
   `uid` int NOT NULL COMMENT '品类索引',
-  `buynum` int NOT NULL COMMENT '卖出量',
+  `soldnum` int NOT NULL COMMENT '卖出量',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
 

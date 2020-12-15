@@ -25,17 +25,17 @@ app.on('request',(req,res)=>{
         database:'shop'
       });  
         lj(connection);
-          let a=url.parse(req.url).query.split("=")[1].split("&&")[0];              //根据get参数判断要获取品类信息还是商品信息 
+          let a=url.parse(req.url).query.split("=")[1].split("&")[0];              //根据get参数判断要获取品类信息还是商品信息 
        let sql="null";
        if(a==1){                                                     //查询品类表 
          sql='SELECT * FROM type';                       
       }else if(a==2){                                                   //查询商品
-        let b=url.parse(req.url).query.split("=")[2].split("&&")[0];
+        let b=url.parse(req.url).query.split("=")[2].split("&")[0];
         let c=url.parse(req.url).query.split("=")[3];
         c=c==1?0:(c-1)*5;
         sql="select * from shop"+b+" limit 5 offset "+c;
       }else if(a==3){
-        sql="select * from hot order by buynum desc limit 10";
+        sql="select * from hot order by soldnum desc limit 10";
       }  
       console.log(sql);                                                                                
   connection.query(sql,function (err,result) {
@@ -53,8 +53,8 @@ app.on('request',(req,res)=>{
        }
 });
     }else{
-    pathname=pathname=='/'?'/indexvue.html':pathname;
-        let realpath=path.join(__dirname,'public'+pathname);
+    pathname=pathname=='/'?'/index.html':pathname;
+        let realpath=path.join(__dirname,'vuework','dist'+pathname);
         fs.readFile(realpath,(error,result)=>{
             res.end(result);
         })   

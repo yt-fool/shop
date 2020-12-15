@@ -1,35 +1,137 @@
-<!DOCTYPE html>
-<html lang="zh"> 
-    <head>
-        <meta charset="utf-8">
-    <title>
-        杨涛便利店
-    </title>
-</head>
-    <body>
-<header >
-    <span>杨涛便利店</span>             <!--店名 -->
-    <mark >欢迎光临杨涛便利店,本店营业时间为6:00——22:00</mark>     
-    <w></w>                
-</header>                                              <!-- 头部-->
-<div id="flex-box">
-<main>                                              <!--左侧主体-->
-    <pack :item="item" v-for="item in data" :key=data.id></pack>
-</main>                
-<aside>                                 <!--右侧固定栏-->
-    <div id="shop"><span id="rank">本周特卖</span>
-    <div>
-        <hotbuy :item="item" v-for="item in hdata" :key="hdata.name"></hotbuy>
-    </div>
-    </div>
-    <div id="box"><h5>购物车</h5>
-        <div>
-           <shopcar :item="item" v-for="item in sdata" :key="sdata.name" ></shopcar>
-        </div>
-            <button :id="but">下单</button>
-       </div>
-</aside>
-</div>
-<script src="./bundle.js"></script>
-    </body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'C:\Users\天然矿物类\Desktop\git\shop\work\public\pubilc\index.html' in 'C:\Users\天然矿物类\Desktop\git\shop\work\public':
+  Error: Can't resolve 'C:\Users\天然矿物类\Desktop\git\shop\work\public\pubilc\index.html' in 'C:\Users\天然矿物类\Desktop\git\shop\work\public'
+  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\天然矿物类\Desktop\git\shop\work\public\pubilc\index.html' in 'C:\Users\天然矿物类\Desktop\git\shop\w  ork\public'
+  
+  - Compilation.js:1586 
+    [public]/[webpack]/lib/Compilation.js:1586:28
+  
+  - NormalModuleFactory.js:648 
+    [public]/[webpack]/lib/NormalModuleFactory.js:648:13
+  
+  
+  - NormalModuleFactory.js:233 
+    [public]/[webpack]/lib/NormalModuleFactory.js:233:22
+  
+  
+  - NormalModuleFactory.js:357 
+    [public]/[webpack]/lib/NormalModuleFactory.js:357:22
+  
+  - NormalModuleFactory.js:120 
+    [public]/[webpack]/lib/NormalModuleFactory.js:120:11
+  
+  - NormalModuleFactory.js:577 
+    [public]/[webpack]/lib/NormalModuleFactory.js:577:24
+  
+  - NormalModuleFactory.js:721 
+    [public]/[webpack]/lib/NormalModuleFactory.js:721:5
+  
+  - Resolver.js:296 finishWithoutResolve
+    [public]/[enhanced-resolve]/lib/Resolver.js:296:11
+  
+  - Resolver.js:362 
+    [public]/[enhanced-resolve]/lib/Resolver.js:362:15
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - DescriptionFilePlugin.js:87 
+    [public]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:87:43
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - DescriptionFilePlugin.js:87 
+    [public]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:87:43
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - Resolver.js:410 
+    [public]/[enhanced-resolve]/lib/Resolver.js:410:5
+  
+  
+  - DirectoryExistsPlugin.js:41 
+    [public]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:41:15
+  
+  - task_queues.js:79 processTicksAndRejections
+    internal/process/task_queues.js:79:21
+  
+  - child-compiler.js:131 
+    [public]/[html-webpack-plugin]/lib/child-compiler.js:131:18
+  
+  - Compiler.js:510 
+    [public]/[webpack]/lib/Compiler.js:510:11
+  
+  - Compiler.js:1014 
+    [public]/[webpack]/lib/Compiler.js:1014:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [public]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1010 
+    [public]/[webpack]/lib/Compiler.js:1010:33
+  
+  - Compilation.js:2137 
+    [public]/[webpack]/lib/Compilation.js:2137:10
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [public]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:2130 
+    [public]/[webpack]/lib/Compilation.js:2130:37
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [public]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:2104 cont
+    [public]/[webpack]/lib/Compilation.js:2104:33
+  
+  - Compilation.js:2150 
+    [public]/[webpack]/lib/Compilation.js:2150:9
+  
+  - async.js:2830 
+    [public]/[neo-async]/async.js:2830:7
+  
+  - async.js:2850 Object.each
+    [public]/[neo-async]/async.js:2850:39
+  
+  - Compilation.js:3215 Compilation.createChunkAssets
+    [public]/[webpack]/lib/Compilation.js:3215:12
+  
+  - Compilation.js:2145 
+    [public]/[webpack]/lib/Compilation.js:2145:13
+  
+  - Compilation.js:2299 
+    [public]/[webpack]/lib/Compilation.js:2299:5
+  
+  - async.js:3461 Object.eachLimit
+    [public]/[neo-async]/async.js:3461:14
+  
+  - Compilation.js:2236 Compilation.codeGeneration
+    [public]/[webpack]/lib/Compilation.js:2236:12
+  
+  - Compilation.js:2070 
+    [public]/[webpack]/lib/Compilation.js:2070:11
+  
+</pre><script src="bundle.js"></script>

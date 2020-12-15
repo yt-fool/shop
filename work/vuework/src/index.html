@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="zh"> 
+    <head>
+        <meta charset="utf-8">
+    <title>
+        杨涛便利店
+    </title>
+</head>
+    <body>                
+<div id="app">
+    <appheader></appheader> 
+    <main>
+    <pack v-for="(item,index) in data" :key="index" :packitem="item"></pack>
+    </main>
+    <aside>
+        <hotbuy v-for="(item,index) in hotdata" :key="index" :hotitem="item" :index="index"></hotbuy>
+    </aside>
+</div>
+    </body>
+</html>
